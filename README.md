@@ -11,7 +11,7 @@ module "k3s" {
 ## Variables
 
 |Name|Description|Default|
-|:---|---|:---:|:---:|
+|:---|---|:---:|
 |`applications`|Apps from Civo kubernetes marketplace|`Traefik, Metrics Server`|
 |`channel`|Channel to pull versions from. Possible values are development, stable and deprecated|`stable`|
 |`cluster_name`|Name for the cluster, if not set one is randomly generated|`""`|
