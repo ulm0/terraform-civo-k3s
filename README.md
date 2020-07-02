@@ -20,6 +20,7 @@ module "k3s" {
 |`write_kubeconfig`|Write kubeconfig to file|`true`|
 
 ## Outputs
+
 |Name|Description|
 |:---|---|
 |`cluster_ca_certificate`|Cluster ca certificate|
