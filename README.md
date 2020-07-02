@@ -1,4 +1,4 @@
-# K3s on Civo
+# k3s on Civo
 
 > TODO: add docs
 
