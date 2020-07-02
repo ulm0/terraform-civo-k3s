@@ -29,7 +29,7 @@ variable "num_target_nodes" {
 }
 
 variable "write_kubeconfig" {
-  description = "Generate kubeconfig"
+  description = "Write kubeconfig to file"
   default     = true
   type        = bool
 }

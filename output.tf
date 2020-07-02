@@ -4,7 +4,7 @@ output "cluster_ca_certificate" {
 }
 
 output "host" {
-  description = "Endoint for k3s api-server"
+  description = "Endpoint for k3s api-server"
   value       = civo_kubernetes_cluster.cluster.api_endpoint
 }
 
