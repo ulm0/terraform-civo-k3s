@@ -24,7 +24,7 @@ resource "civo_kubernetes_cluster" "cluster" {
   kubernetes_version = element(data.civo_kubernetes_version.channel.versions, 0).version
   name               = local.cluster_name
   num_target_nodes   = var.num_target_nodes
-  target_nodes_size  = element(data.civo_instances_size.node_size.sizes, 0).name
+  target_nodes_size  = length(data.civo_instances_size.node_size.sizes) > 0 ? element(data.civo_instances_size.node_size.sizes, 0).name : var.node_size
 }
 
 resource "local_file" "kubeconfig" {
