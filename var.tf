@@ -17,8 +17,8 @@ variable "cluster_name" {
 }
 
 variable "node_size" {
-  default     = "g2.xsmall"
-  description = "Instance size for nodes. Possible values are g2.xsmall, g2.small, g2.medium, g2.large, g2.xlarge and g2.2xlarge"
+  default     = "g3.k3s.xsmall"
+  description = "Instance size for nodes. Possible values are g3.k3s.xsmall, g3.k3s.small, g3.k3s.medium, g3.k3s.large, g3.k3s.xlarge and g3.k3s.2xlarge"
   type        = string
 }
 
